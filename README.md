@@ -1,6 +1,6 @@
 # Fitness data journey
 
-A dependency-free, ten-slide story about evolving from fitness-data automation to a personal Sunday reporting agent.
+A dependency-free, twelve-slide story about evolving from fitness-data automation to a purpose-built Sunday reporting agent.
 
 ## Preview locally
 
@@ -16,7 +16,9 @@ Use the visible controls, `ArrowLeft` / `ArrowRight`, `Space`, `Home`, or `End`.
 
 ## Replace the image placeholders
 
-All image locations are labeled dashed cards in `index.html`. Replace a card with a local `<img>`, use its label as the basis for descriptive `alt` text, and keep the surrounding `<figure>`. Follow the crop instruction printed on the card, and commit image files to this repository so the deck remains self-contained.
+The deck is diagram-first and has five labeled dashed image cards in `index.html`: the final report, Airtable, Intervals.icu, Paperdink, and the Telegram check-in. Replace a card with a local `<img>`, use its label as the basis for descriptive `alt` text, and keep the surrounding `<figure>`. Follow the crop instruction printed on the card, and commit image files to this repository so the deck remains self-contained.
+
+The Airtable and Intervals.icu cards are designed as fallbacks for a live-browser handoff during the presentation; one clean screenshot per service is enough.
 
 ## Publish with GitHub Pages
 

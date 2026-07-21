@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="The data was the hard part: from Zapier automations to a personal fitness agent."
+      content="The data was the hard part: from fitness-data automation to a purpose-built Telegram agent."
     >
     <title>The data was the hard part</title>
     <link rel="icon" href="data:,">
@@ -21,7 +21,7 @@
           <span class="deck-brand-mark" aria-hidden="true"></span>
           Fitness data journey
         </p>
-        <p class="slide-counter" id="slide-counter" aria-live="polite">01 / 10</p>
+        <p class="slide-counter" id="slide-counter" aria-live="polite">01 / 12</p>
       </header>
 
       <main class="slide-stage" id="slide-stage" aria-label="Presentation slides" tabindex="-1">
@@ -33,9 +33,9 @@
           aria-labelledby="slide-1-title"
         >
           <div class="slide-topline">
-            <p class="eyebrow">From Zapier automations to a personal fitness agent</p>
-            <p class="breadcrumb" aria-label="Journey from Zapier to an agent">
-              <span>Zapier</span>
+            <p class="eyebrow">From closed APIs to a personal fitness agent</p>
+            <p class="breadcrumb" aria-label="Journey from COROS to an agent">
+              <span>COROS</span>
               <span class="breadcrumb-arrow" aria-hidden="true">&rarr;</span>
               <span>agent</span>
             </p>
@@ -57,8 +57,8 @@
               <span class="placeholder-index">Hero image</span>
               <figcaption>
                 <strong>Telegram Sunday report</strong>
-                <span>Replace with final report screenshot</span>
-                <small>Crop: portrait 4:5 &middot; keep verdict and first metrics visible</small>
+                <span>Replace with the final weekly report</span>
+                <small>Crop: portrait 4:5 &middot; show verdict, week, training summary, and first signals</small>
               </figcaption>
               <span class="placeholder-status">Sunday &middot; automatic</span>
             </figure>
@@ -66,120 +66,112 @@
         </section>
 
         <section
-          class="slide chapter-automation"
+          class="slide chapter-data"
           id="slide-2"
           data-slide="2"
-          data-title="First, I automated the bookkeeping"
+          data-title="The first problem was getting the data out"
           aria-labelledby="slide-2-title"
           aria-hidden="true"
         >
-          <header class="slide-heading">
-            <p class="chapter-label">02 / Automation</p>
-            <h2 id="slide-2-title">First, I automated the bookkeeping</h2>
-            <p>It moved the data reliably. It did not interpret it.</p>
+          <header class="slide-heading split-heading">
+            <div>
+              <p class="chapter-label">02 / Access before insight</p>
+              <h2 id="slide-2-title">The first problem was not AI.<br>It was getting the data out.</h2>
+            </div>
+            <p class="side-copy">
+              A great wearable is not automatically a useful data platform.
+            </p>
           </header>
 
-          <div class="pipeline" aria-label="Strava to Zapier to Airtable to Sunday email">
-            <div class="pipeline-node">
-              <span class="node-dot" aria-hidden="true"></span>
-              <strong>Strava</strong>
-              <small>activity</small>
+          <div class="access-layout">
+            <div class="constraint-stack">
+              <article class="constraint-card">
+                <div class="constraint-icon watch-icon" aria-hidden="true"></div>
+                <div>
+                  <p class="micro-label">My source</p>
+                  <h3>COROS watch</h3>
+                  <p>Excellent hardware. No easy public API for the history I wanted to explore.</p>
+                </div>
+                <span class="constraint-tag">closed door</span>
+              </article>
+              <article class="constraint-card">
+                <div class="constraint-icon api-icon" aria-hidden="true">API</div>
+                <div>
+                  <p class="micro-label">The obvious bridge</p>
+                  <h3>Direct Strava access</h3>
+                  <p>I did not want this personal project tied to another paid or managed API dependency.</p>
+                </div>
+                <span class="constraint-tag">not my route</span>
+              </article>
             </div>
-            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
-            <div class="pipeline-node pipeline-node-accent">
-              <span class="node-dot" aria-hidden="true"></span>
-              <strong>Zapier</strong>
-              <small>move</small>
-            </div>
-            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
-            <div class="pipeline-node">
-              <span class="node-dot" aria-hidden="true"></span>
-              <strong>Airtable</strong>
-              <small>organize</small>
-            </div>
-            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
-            <div class="pipeline-node">
-              <span class="node-dot" aria-hidden="true"></span>
-              <strong>Sunday email</strong>
-              <small>reflect</small>
-            </div>
-          </div>
 
-          <div class="placeholder-pair">
-            <figure
-              class="media-placeholder placeholder-email"
-              role="img"
-              aria-label="Placeholder for the Airtable weekly email"
-            >
-              <span class="placeholder-index">Reference 01</span>
-              <figcaption>
-                <strong>Airtable weekly email</strong>
-                <span>Replace with a representative email</span>
-                <small>Crop: landscape 3:2 &middot; show subject and weekly summary</small>
-              </figcaption>
-            </figure>
-            <figure
-              class="media-placeholder placeholder-table"
-              role="img"
-              aria-label="Placeholder for the raw records table"
-            >
-              <span class="placeholder-index">Reference 02</span>
-              <figcaption>
-                <strong>Raw records table</strong>
-                <span>Replace with an Airtable grid view</span>
-                <small>Crop: landscape 3:2 &middot; keep rows and field names legible</small>
-              </figcaption>
-            </figure>
+            <article class="access-decision">
+              <p class="micro-label">The useful reframing</p>
+              <blockquote>&ldquo;Stop integrating every device. Find one trustworthy place for the history.&rdquo;</blockquote>
+              <div class="access-sketch" aria-label="Many awkward sources becoming one normalized data layer">
+                <div>
+                  <span>COROS</span>
+                  <span>Strava</span>
+                  <span>wellness</span>
+                </div>
+                <b aria-hidden="true">&rarr;</b>
+                <div class="access-destination">
+                  <span class="database-icon" aria-hidden="true"></span>
+                  <strong>one normalized layer</strong>
+                  <small>activities + recovery + history</small>
+                </div>
+              </div>
+              <p class="access-footnote">
+                The breakthrough was not a perfect connector. It was an abstraction layer I could keep reusing.
+              </p>
+            </article>
           </div>
-
-          <p class="slide-note">
-            Airtable was valuable: it proved that a consistent weekly reflection was worth keeping.
-          </p>
         </section>
 
         <section
           class="slide chapter-automation"
           id="slide-3"
           data-slide="3"
-          data-title="Useful, but every question had to be designed in advance"
+          data-title="First, I automated the bookkeeping"
           aria-labelledby="slide-3-title"
           aria-hidden="true"
         >
-          <header class="slide-heading compact-heading">
-            <p class="chapter-label">03 / The ceiling</p>
-            <h2 id="slide-3-title">Useful&mdash;but every question had to be designed in advance</h2>
+          <header class="slide-heading">
+            <p class="chapter-label">03 / Automation</p>
+            <h2 id="slide-3-title">First, I automated the bookkeeping</h2>
+            <p>Zapier and Airtable made the weekly ritual dependable before it made it intelligent.</p>
           </header>
 
-          <div class="dashboard-layout">
+          <div class="pipeline" aria-label="Strava to Zapier to Airtable to Sunday email">
+            <div class="pipeline-node"><span class="node-dot" aria-hidden="true"></span><strong>Strava</strong><small>activity event</small></div>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <div class="pipeline-node pipeline-node-accent"><span class="node-dot" aria-hidden="true"></span><strong>Zapier</strong><small>move it</small></div>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <div class="pipeline-node"><span class="node-dot" aria-hidden="true"></span><strong>Airtable</strong><small>organize it</small></div>
+            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
+            <div class="pipeline-node"><span class="node-dot" aria-hidden="true"></span><strong>Sunday email</strong><small>reflect</small></div>
+          </div>
+
+          <div class="automation-layout">
             <figure
-              class="media-placeholder placeholder-dashboard"
+              class="media-placeholder browser-placeholder"
               role="img"
-              aria-label="Placeholder for a large Airtable dashboard"
+              aria-label="Placeholder for a representative Airtable dashboard"
             >
-              <span class="placeholder-index">Primary image</span>
+              <span class="placeholder-index">Browser fallback</span>
+              <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>airtable.com / fitness</span></div>
               <figcaption>
-                <strong>Airtable dashboard</strong>
-                <span>Replace with the most complete dashboard view</span>
-                <small>Crop: wide 16:9 &middot; preserve charts, filters, and table context</small>
+                <strong>Airtable dashboard + weekly records</strong>
+                <span>Use one screenshot only; switch to the live base when presenting</span>
+                <small>Crop: wide 16:9 &middot; preserve charts, filters, and row context</small>
               </figcaption>
+              <span class="live-tab-badge"><i aria-hidden="true"></i> Live tab</span>
             </figure>
 
-            <div class="callout-stack" aria-label="Limits of the fixed dashboard">
-              <article class="callout-card">
-                <span>01</span>
-                <h3>Fixed questions</h3>
-                <p>Great answers&mdash;as long as I had predicted the question.</p>
-              </article>
-              <article class="callout-card">
-                <span>02</span>
-                <h3>Manual maintenance</h3>
-                <p>Every new idea needed another formula, chart, or view.</p>
-              </article>
-              <article class="callout-card">
-                <span>03</span>
-                <h3>Missing context</h3>
-                <p>The dashboard showed what happened, not always why it mattered.</p>
-              </article>
+            <div class="lesson-stack">
+              <article><span>01</span><h3>It solved collection</h3><p>Activities arrived consistently without manual bookkeeping.</p></article>
+              <article><span>02</span><h3>It proved the ritual</h3><p>A calm Sunday reflection was worth keeping.</p></article>
+              <article><span>03</span><h3>It exposed the ceiling</h3><p>Every new question still meant another formula, chart, and maintenance path.</p></article>
             </div>
           </div>
         </section>
@@ -195,37 +187,37 @@
           <header class="slide-heading">
             <p class="chapter-label">04 / Data foundation</p>
             <h2 id="slide-4-title">The compounding decision:<br>one place for the data</h2>
-            <p>Intervals.icu became my personal fitness data lake.</p>
+            <p>Intervals.icu became the fitness-data warehouse I did not have to build.</p>
           </header>
 
           <div class="foundation-layout">
             <figure
-              class="media-placeholder placeholder-calendar"
+              class="media-placeholder browser-placeholder"
               role="img"
               aria-label="Placeholder for the Intervals.icu calendar"
             >
-              <span class="placeholder-index">Foundation view</span>
+              <span class="placeholder-index">Browser fallback</span>
+              <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>intervals.icu / calendar</span></div>
               <figcaption>
                 <strong>Intervals.icu calendar</strong>
-                <span>Replace with a representative training month</span>
-                <small>Crop: landscape 4:3 &middot; include activities and wellness row</small>
+                <span>Use a representative month; switch to the live account for detail</span>
+                <small>Crop: landscape 4:3 &middot; include activities, load, and wellness</small>
               </figcaption>
+              <span class="live-tab-badge"><i aria-hidden="true"></i> Live tab</span>
             </figure>
 
-            <article class="database-card" aria-label="Data available from Intervals.icu">
+            <article class="database-card" aria-label="Reusable data available from Intervals.icu">
               <header>
                 <span class="database-icon" aria-hidden="true"></span>
-                <div>
-                  <p>Intervals.icu</p>
-                  <strong>Normalized history</strong>
-                </div>
+                <div><p>Intervals.icu</p><strong>Normalized history</strong></div>
                 <span class="status-pill">API ready</span>
               </header>
               <ul class="database-list">
-                <li><span>Activities</span><small>runs, rides, swims</small></li>
-                <li><span>Wellness</span><small>sleep, weight, readiness</small></li>
-                <li><span>Training load</span><small>consistent calculations</small></li>
-                <li><span>History</span><small>weeks become context</small></li>
+                <li><span>Activities</span><small>runs, rides, swims, sessions</small></li>
+                <li><span>Wellness</span><small>sleep, HRV, resting HR, readiness</small></li>
+                <li><span>Training load</span><small>one consistent calculation layer</small></li>
+                <li><span>History</span><small>recent weeks become personal context</small></li>
+                <li><span>Two athletes</span><small>same API shape, separate accounts</small></li>
               </ul>
             </article>
           </div>
@@ -239,163 +231,110 @@
           class="slide chapter-ai"
           id="slide-5"
           data-slide="5"
-          data-title="Then I could ask questions I had not planned for"
+          data-title="One foundation opened many interfaces"
           aria-labelledby="slide-5-title"
           aria-hidden="true"
         >
-          <header class="slide-heading split-heading interface-heading">
+          <header class="slide-heading split-heading">
             <div>
-              <p class="chapter-label">05 / New interfaces</p>
-              <h2 id="slide-5-title">Then I could ask questions<br>I had not planned for</h2>
+              <p class="chapter-label">05 / Compounding options</p>
+              <h2 id="slide-5-title">One foundation opened<br>many interfaces</h2>
             </div>
             <p class="side-copy">
-              Centralizing the data made both deep analysis and ambient, glanceable experiences possible.
+              The data stopped being trapped in the first dashboard I built for it.
             </p>
           </header>
 
-          <div class="interface-layout">
-            <article class="interface-panel interface-claude">
-              <header>
-                <div>
-                  <p class="micro-label">Exploratory AI</p>
-                  <h3>Claude made new questions cheap.</h3>
-                </div>
-                <span class="status-pill">Powerful, manual</span>
-              </header>
-              <figure
-                class="media-placeholder interface-placeholder"
-                role="img"
-                aria-label="Placeholder for a Claude chart and prose analysis"
-              >
-                <span class="placeholder-index">Analysis example</span>
-                <figcaption>
-                  <strong>Claude chart + interpretation</strong>
-                  <span>Replace with one surprising analysis</span>
-                  <small>Crop: landscape 16:10 &middot; pair one chart with the clearest prose</small>
-                </figcaption>
-              </figure>
-              <div class="interface-meta">
-                <div class="mini-flow" aria-label="Export, upload, prompt, insight">
-                  <span>export</span><i aria-hidden="true">&rarr;</i>
-                  <span>upload</span><i aria-hidden="true">&rarr;</i>
-                  <span>prompt</span><i aria-hidden="true">&rarr;</i>
-                  <span>insight</span>
-                </div>
-                <p>Excellent for discovery. The limitation was repeatability: every insight still began with me.</p>
-              </div>
+          <div class="interface-map" aria-label="Intervals.icu branching to four interfaces">
+            <div class="interface-source">
+              <span class="database-icon" aria-hidden="true"></span>
+              <strong>Intervals.icu</strong>
+              <small>one trusted history</small>
+            </div>
+            <article class="interface-destination interface-airtable">
+              <span>01</span><h3>Airtable</h3><p>fixed dashboard</p><small>reflect</small>
             </article>
-
-            <article class="interface-panel interface-paper">
-              <header>
-                <div>
-                  <p class="micro-label">Parallel branch</p>
-                  <h3>The same data could live somewhere completely different.</h3>
-                </div>
-                <a class="project-link" href="https://github.com/kaushiksahoo2000/paperdink">Paperdink</a>
-              </header>
-              <figure
-                class="media-placeholder interface-placeholder"
-                role="img"
-                aria-label="Placeholder for a photo of the Paperdink e-ink device"
-              >
-                <span class="placeholder-index">Device photo</span>
-                <figcaption>
-                  <strong>4.2-inch e-ink display</strong>
-                  <span>Ambient fitness data for me and my partner</span>
-                  <small>Crop: portrait 4:5 &middot; include device edge and readable screen</small>
-                </figcaption>
-              </figure>
-              <div
-                class="reverse-pipeline"
-                aria-label="Intervals.icu through a Cloudflare Worker and bitmap to an ESP32 e-paper display"
-              >
-                <div class="reverse-node"><strong>ESP32 / e-paper</strong><small>display</small></div>
-                <span aria-hidden="true">&larr;</span>
-                <div class="reverse-node"><strong>bitmap</strong><small>render</small></div>
-                <span aria-hidden="true">&larr;</span>
-                <div class="reverse-node"><strong>Cloudflare Worker</strong><small>prepare</small></div>
-                <span aria-hidden="true">&larr;</span>
-                <div class="reverse-node"><strong>Intervals.icu</strong><small>source</small></div>
-              </div>
+            <article class="interface-destination interface-claude">
+              <span>02</span><h3>Claude</h3><p>unplanned questions</p><small>discover</small>
             </article>
+            <article class="interface-destination interface-paperdink">
+              <span>03</span><h3>Paperdink</h3><p>shared e-ink view</p><small>glance</small>
+            </article>
+            <article class="interface-destination interface-sunday">
+              <span>04</span><h3>Sunday Report</h3><p>automatic feedback</p><small>repeat</small>
+            </article>
+            <span class="interface-connector connector-one" aria-hidden="true"></span>
+            <span class="interface-connector connector-two" aria-hidden="true"></span>
+            <span class="interface-connector connector-three" aria-hidden="true"></span>
+            <span class="interface-connector connector-four" aria-hidden="true"></span>
           </div>
 
-          <footer class="interface-footer">
-            <strong>Same foundation, different jobs:</strong>
-            <span>Claude for discovery &middot; Paperdink for a quiet glance &middot; an agent for a recurring ritual</span>
-          </footer>
+          <div class="discovery-strip">
+            <div class="mini-flow" aria-label="Export, upload, prompt, insight">
+              <span>export</span><i aria-hidden="true">&rarr;</i>
+              <span>upload</span><i aria-hidden="true">&rarr;</i>
+              <span>prompt</span><i aria-hidden="true">&rarr;</i>
+              <span>insight</span>
+            </div>
+            <p><strong>Claude was excellent for discovery</strong>&mdash;and Copilot helped me build the new interfaces. The remaining limitation was repeatability: useful analysis still began with me.</p>
+          </div>
         </section>
 
         <section
-          class="slide chapter-agent"
+          class="slide chapter-paper"
           id="slide-6"
           data-slide="6"
-          data-title="But a chat is still a task"
+          data-title="The device is the scheduler. SVG is the source of truth."
           aria-labelledby="slide-6-title"
           aria-hidden="true"
         >
           <header class="slide-heading split-heading">
             <div>
-              <p class="chapter-label">06 / Productizing the ritual</p>
-              <h2 id="slide-6-title">But a chat is still a task</h2>
+              <p class="chapter-label">06 / Paperdink</p>
+              <h2 id="slide-6-title">The device is the scheduler.<br>SVG is the source of truth.</h2>
             </div>
             <p class="side-copy">
-              The next leap was not a smarter prompt. It was turning the useful behavior into a small, dependable product.
+              <a href="https://github.com/kaushiksahoo2000/paperdink">Paperdink</a> puts my data beside my partner&rsquo;s on one 4.2-inch e-ink display.
             </p>
           </header>
 
-          <div class="productization-layout">
-            <div class="productization-copy">
-              <div class="contrast-card" aria-label="Manual chat workflow compared with automatic Sunday workflow">
-                <div class="contrast-row contrast-row-manual">
-                  <span class="contrast-label">Every time</span>
-                  <div>
-                    <strong>export</strong><i aria-hidden="true">/</i>
-                    <strong>upload</strong><i aria-hidden="true">/</i>
-                    <strong>prompt</strong><i aria-hidden="true">/</i>
-                    <strong>remember</strong>
-                  </div>
-                </div>
-                <div class="contrast-divider" aria-hidden="true">
-                  <span>from a task</span><b>&darr;</b><span>to a ritual</span>
-                </div>
-                <div class="contrast-row contrast-row-auto">
-                  <span class="contrast-label">Every Sunday</span>
-                  <div>
-                    <strong>automatically</strong>
-                    <small>same calm moment &middot; fresh facts &middot; saved history</small>
-                  </div>
-                </div>
+          <div class="paperdink-layout">
+            <figure
+              class="media-placeholder placeholder-device"
+              role="img"
+              aria-label="Placeholder for a photo of the Paperdink e-ink device"
+            >
+              <span class="placeholder-index">Physical object</span>
+              <figcaption>
+                <strong>Two athletes, one quiet display</strong>
+                <span>Replace with Paperdink in its everyday setting</span>
+                <small>Crop: portrait 4:5 &middot; include device edge and readable screen</small>
+              </figcaption>
+              <span class="placeholder-status">400 &times; 300 &middot; 1-bit</span>
+            </figure>
+
+            <div class="paperdink-story">
+              <div class="duo-panel" aria-label="Kaushik and Kathy display cards">
+                <article><span class="mascot-face" aria-hidden="true">^_^</span><div><p>Kaushik</p><strong>FORM</strong><small>42-day trend</small></div></article>
+                <article><span class="mascot-face" aria-hidden="true">^.^</span><div><p>Kathy</p><strong>READINESS</strong><small>14-day trend</small></div></article>
               </div>
 
-              <div class="ritual-sequence" aria-label="Sunday report sequence">
-                <span><b>1</b>ask intent</span>
-                <i aria-hidden="true">&rarr;</i>
-                <span><b>2</b>compute week</span>
-                <i aria-hidden="true">&rarr;</i>
-                <span><b>3</b>send report</span>
-                <i aria-hidden="true">&rarr;</i>
-                <span><b>4</b>remember it</span>
+              <div class="paper-architecture" aria-label="Paperdink request and render architecture">
+                <article class="paper-node paper-wake"><strong>ESP32 wakes</strong><small>every 5 minutes</small></article>
+                <span class="paper-arrow paper-arrow-a" aria-hidden="true">&rarr;</span>
+                <article class="paper-node paper-worker"><strong>Cloudflare Worker</strong><small>stateless edge compute</small></article>
+                <span class="paper-arrow paper-arrow-b" aria-hidden="true">&larr;</span>
+                <article class="paper-node paper-data"><strong>Intervals.icu &times; 2</strong><small>both athletes, parallel</small></article>
+                <article class="paper-node paper-svg"><strong>SVG template</strong><small>browser-debuggable source</small></article>
+                <span class="paper-arrow paper-arrow-c" aria-hidden="true">&rarr;</span>
+                <article class="paper-node paper-bmp"><strong>1-bit BMP</strong><small>resvg-wasm &middot; 400 &times; 300</small></article>
+                <span class="paper-arrow paper-arrow-d" aria-hidden="true">&rarr;</span>
+                <article class="paper-node paper-sleep"><strong>paint + sleep</strong><small>the frame drives the loop</small></article>
               </div>
-            </div>
 
-            <div class="build-column">
-              <figure
-                class="media-placeholder placeholder-build"
-                role="img"
-                aria-label="Placeholder for a Claude Code or GitHub Copilot build conversation"
-              >
-                <span class="placeholder-index">Build process</span>
-                <figcaption>
-                  <strong>AI-assisted build conversation</strong>
-                  <span>Replace with Claude Code or Copilot in context</span>
-                  <small>Crop: landscape 4:3 &middot; show one design decision and its implementation</small>
-                </figcaption>
-              </figure>
-              <div class="build-decisions">
-                <p><strong>Scheduled:</strong> resumes or catches up after a restart.</p>
-                <p><strong>Intent-aware:</strong> planned easy weeks are not mistaken for decline.</p>
-                <p><strong>Bounded AI:</strong> the deterministic report never depends on the narrator.</p>
+              <div class="paper-facts">
+                <span>no cron</span><span>no database</span><span>5-minute edge cache</span><span>Copilot co-authored</span>
+                <p><code>make preview-p1</code> shows the exact SVG in a normal browser before the device ever sees a bitmap.</p>
               </div>
             </div>
           </div>
@@ -405,67 +344,52 @@
           class="slide chapter-agent"
           id="slide-7"
           data-slide="7"
-          data-title="What the agent actually looks at"
+          data-title="The agent did not need every agent feature"
           aria-labelledby="slide-7-title"
           aria-hidden="true"
         >
           <header class="slide-heading split-heading">
             <div>
-              <p class="chapter-label">07 / Signals</p>
-              <h2 id="slide-7-title">What the agent<br>actually looks at</h2>
+              <p class="chapter-label">07 / Purpose-built agents</p>
+              <h2 id="slide-7-title">The agent did not need<br>every agent feature</h2>
             </div>
             <p class="side-copy">
-              Each signal compares this week with my trailing six-week baseline, then reports a direction,
-              magnitude, confidence, and plain-language explanation.
+              The SDK made the optional AI step easy. The useful product loop was everything around it.
             </p>
           </header>
 
-          <div class="signal-grid" aria-label="Five deterministic fitness signals">
-            <article class="signal-card">
-              <span>01</span>
-              <h3>Load &amp; ramp</h3>
-              <p>Is longer-term fitness rising without fatigue getting away?</p>
-              <small>training load &middot; fitness trend &middot; form</small>
-            </article>
-            <article class="signal-card">
-              <span>02</span>
-              <h3>Volume</h3>
-              <p>How much work moved through the week?</p>
-              <small>moving time &middot; total load &middot; run distance</small>
-            </article>
-            <article class="signal-card">
-              <span>03</span>
-              <h3>Intensity</h3>
-              <p>How concentrated and hard was that work?</p>
-              <small>load per hour &middot; pace &middot; heart rate</small>
-            </article>
-            <article class="signal-card">
-              <span>04</span>
-              <h3>Consistency</h3>
-              <p>Did I keep showing up across the week?</p>
-              <small>active days &middot; sessions &middot; sport mix</small>
-            </article>
-            <article class="signal-card">
-              <span>05</span>
-              <h3>Recovery</h3>
-              <p>Does readiness support the training story?</p>
-              <small>HRV &middot; resting HR &middot; sleep &middot; weight context</small>
-            </article>
-          </div>
+          <div class="agent-choice-layout">
+            <div class="scope-comparison">
+              <article class="scope-card scope-broad">
+                <p class="micro-label">General-purpose platform</p>
+                <h3>OpenClaw-style breadth</h3>
+                <div class="scope-chips"><span>many channels</span><span>tools</span><span>skills</span><span>memory</span><span>plugins</span><span>model routing</span></div>
+                <p>Useful when the job really needs a broad, programmable assistant.</p>
+              </article>
+              <div class="scope-divider"><span>choose the smallest runtime that fits</span><b aria-hidden="true">&rarr;</b></div>
+              <article class="scope-card scope-narrow">
+                <p class="micro-label">This job</p>
+                <h3>One narrow weekly loop</h3>
+                <div class="scope-chips"><span>Telegram</span><span>Intervals</span><span>5 signals</span><span>Sunday</span><span>SQLite</span><span>optional prose</span></div>
+                <p>Permissions, state, failure modes, and maintenance stay legible.</p>
+              </article>
+            </div>
 
-          <div class="signal-method">
-            <div>
-              <p class="micro-label">How it stays honest</p>
-              <p>Medians reduce the effect of one strange week. Missing inputs lower confidence and add a caveat&mdash;they never become a guess.</p>
-            </div>
-            <div class="verdict-chips" aria-label="Possible deterministic week verdicts">
-              <span>building</span>
-              <span>holding</span>
-              <span>recovering by design</span>
-              <span>decline possible</span>
-              <span>overreaching caution</span>
-              <span>insufficient data</span>
-            </div>
+            <article class="sdk-card">
+              <p class="micro-label">The SDK shelf is already here</p>
+              <div class="sdk-list">
+                <span>GitHub Copilot SDK</span>
+                <span>Vercel AI SDK</span>
+                <span>OpenAI Agents SDK</span>
+                <span>Claude Agent SDK</span>
+              </div>
+              <blockquote>&ldquo;Connecting AI to a data warehouse is cheap. Deciding what it may do is the design.&rdquo;</blockquote>
+              <div class="actual-stack">
+                <strong>What I actually built</strong>
+                <p>Custom Go orchestration + one SQLite file + Telegram. The Copilot SDK is one fresh, tool-disabled, optional narration call.</p>
+              </div>
+              <p class="cost-note">No dedicated hosted backend: it runs on hardware I already own and uses existing service accounts.</p>
+            </article>
           </div>
         </section>
 
@@ -473,69 +397,35 @@
           class="slide chapter-agent"
           id="slide-8"
           data-slide="8"
-          data-title="From AI analysis to an AI-assisted agent"
+          data-title="Five signals become five human questions"
           aria-labelledby="slide-8-title"
           aria-hidden="true"
         >
           <header class="slide-heading split-heading">
             <div>
-              <p class="chapter-label">08 / Architecture</p>
-              <h2 id="slide-8-title">From AI analysis<br>to an AI-assisted agent</h2>
+              <p class="chapter-label">08 / Fitness data, translated</p>
+              <h2 id="slide-8-title">Five signals become<br>five human questions</h2>
             </div>
             <p class="side-copy">
-              <a href="https://github.com/kaushiksahoo2000/sunday-fitness-report">Sunday Fitness Report</a>
-              is a calm weekly reporting agent&mdash;not medical advice or an autonomous coach.
+              The report compares me with my own recent normal&mdash;usually six trailing weeks&mdash;not with another athlete.
             </p>
           </header>
 
-          <div
-            class="agent-pipeline agent-pipeline-detailed"
-            aria-label="Intervals.icu through cached data, deterministic Go facts and verdict, optional AI prose, and Telegram"
-          >
-            <article class="agent-node">
-              <span>01</span>
-              <p>Fetch + cache</p>
-              <small>Intervals.icu history; stale data is labeled</small>
-            </article>
-            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
-            <article class="agent-node agent-node-core">
-              <span>02</span>
-              <p>Go facts engine</p>
-              <small>weekly totals, five signals, confidence</small>
-            </article>
-            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
-            <article class="agent-node agent-node-core">
-              <span>03</span>
-              <p>Go classifier</p>
-              <small>verdict + explainer, adjusted by intent</small>
-            </article>
-            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
-            <article class="agent-node agent-node-optional">
-              <span>04</span>
-              <p>Optional AI lede</p>
-              <small>1&ndash;2 sentences + one gentle takeaway</small>
-            </article>
-            <span class="flow-arrow" aria-hidden="true">&rarr;</span>
-            <article class="agent-node">
-              <span>05</span>
-              <p>Telegram + store</p>
-              <small>render, send, and save the exact report</small>
-            </article>
+          <div class="signal-grid" aria-label="Five deterministic fitness signals">
+            <article class="signal-card"><span>01</span><h3>Load &amp; ramp</h3><p>Is my longer-term fitness trend rising, holding, or easing?</p><small>fitness trend &middot; fatigue &middot; form</small></article>
+            <article class="signal-card"><span>02</span><h3>Volume</h3><p>How much training did I actually do?</p><small>moving time &middot; load &middot; run miles</small></article>
+            <article class="signal-card"><span>03</span><h3>Intensity</h3><p>How hard and concentrated was the work?</p><small>load per hour &middot; pace &middot; heart rate</small></article>
+            <article class="signal-card"><span>04</span><h3>Consistency</h3><p>How often did I show up?</p><small>active days &middot; sessions &middot; sport mix</small></article>
+            <article class="signal-card"><span>05</span><h3>Recovery</h3><p>Do readiness signals support the training story?</p><small>HRV &middot; resting HR &middot; sleep</small></article>
           </div>
 
-          <div class="architecture-notes">
-            <blockquote>
-              <span class="quote-mark" aria-hidden="true">&ldquo;</span>
-              The model never invents a number.
-            </blockquote>
+          <div class="signal-method">
             <div>
-              <p><strong>Structurally enforced:</strong> AI only writes above the unchanged deterministic report.</p>
-              <p><strong>Failure is visible:</strong> cache age, missing data, and unknown intent become explicit caveats.</p>
-              <div class="trust-chips" aria-label="System trust characteristics">
-                <span>deterministic</span>
-                <span>cached</span>
-                <span>graceful fallback</span>
-              </div>
+              <p class="micro-label">How it stays honest</p>
+              <p>Medians soften one strange week. Missing inputs lower confidence and add a caveat&mdash;they never become a guess.</p>
+            </div>
+            <div class="verdict-chips" aria-label="Possible deterministic week verdicts">
+              <span>building</span><span>holding</span><span>recovering by design</span><span>decline possible</span><span>overreaching caution</span><span>insufficient data</span>
             </div>
           </div>
         </section>
@@ -544,108 +434,204 @@
           class="slide chapter-agent"
           id="slide-9"
           data-slide="9"
-          data-title="The feedback loop now closes itself"
+          data-title="The model never invents a number"
           aria-labelledby="slide-9-title"
           aria-hidden="true"
         >
-          <header class="slide-heading demo-heading">
+          <header class="slide-heading split-heading">
             <div>
-              <p class="chapter-label">09 / In practice</p>
-              <h2 id="slide-9-title">The feedback loop<br>now closes itself</h2>
+              <p class="chapter-label">09 / Architecture + trust</p>
+              <h2 id="slide-9-title">The model never<br>invents a number</h2>
             </div>
-            <div class="demo-badge"><span aria-hidden="true"></span> Live demo</div>
-            <p>Sunday asks for context, sends the verdict, and keeps enough history to make next Sunday better.</p>
+            <p class="side-copy">
+              AI writes above the report. It never calculates a metric, changes a verdict, or controls the schedule.
+            </p>
           </header>
 
-          <div class="telegram-gallery">
-            <figure
-              class="media-placeholder placeholder-phone"
-              role="img"
-              aria-label="Placeholder for Telegram report intent buttons"
-            >
-              <span class="placeholder-index">01 / Intent</span>
-              <figcaption>
-                <strong>Tappable check-in</strong>
-                <span>On plan &middot; deliberately easy &middot; off plan</span>
-                <small>Crop: portrait 9:16 &middot; keep buttons and optional note visible</small>
-              </figcaption>
-            </figure>
-            <figure
-              class="media-placeholder placeholder-phone placeholder-phone-featured"
-              role="img"
-              aria-label="Placeholder for the finished Telegram weekly report"
-            >
-              <span class="placeholder-index">02 / Report</span>
-              <figcaption>
-                <strong>Finished report</strong>
-                <span>Verdict, sessions, five signals, lede, and one takeaway</span>
-                <small>Crop: portrait 9:16 &middot; show verdict, metrics, and explanation</small>
-              </figcaption>
-            </figure>
-            <figure
-              class="media-placeholder placeholder-phone"
-              role="img"
-              aria-label="Placeholder for the Telegram history command"
-            >
-              <span class="placeholder-index">03 / Memory</span>
-              <figcaption>
-                <strong><code>/history</code> + <code>/last</code></strong>
-                <span>Recent verdicts and the saved report on demand</span>
-                <small>Crop: portrait 9:16 &middot; show command and recent weeks</small>
-              </figcaption>
-            </figure>
+          <div class="architecture-canvas" aria-label="Sunday Report data flow and optional narrator">
+            <div class="architecture-flow">
+              <article><span>01</span><strong>Intervals.icu</strong><small>activities + wellness</small></article>
+              <i aria-hidden="true">&rarr;</i>
+              <article><span>02</span><strong>Local SQLite</strong><small>cache + saved reports</small></article>
+              <i aria-hidden="true">&rarr;</i>
+              <article class="architecture-core"><span>03</span><strong>Go engine</strong><small>baseline &rarr; signals &rarr; verdict</small></article>
+              <i aria-hidden="true">&rarr;</i>
+              <article class="architecture-compose"><span>04</span><strong>Compose message</strong><small>unchanged deterministic body</small></article>
+              <i aria-hidden="true">&rarr;</i>
+              <article><span>05</span><strong>Telegram</strong><small>check-in &middot; report &middot; history</small></article>
+            </div>
+
+            <article class="copilot-sidecar">
+              <p class="micro-label">Optional sidecar</p>
+              <strong>GitHub Copilot SDK</strong>
+              <small>finished facts only &middot; tools off &middot; 1&ndash;2 sentence lede</small>
+              <span aria-hidden="true">&darr;</span>
+            </article>
+
+            <div class="intent-return">
+              <span>Telegram intent</span>
+              <b aria-hidden="true">&rarr;</b>
+              <strong>on plan &middot; deliberately easy &middot; off plan</strong>
+              <i aria-hidden="true">&rarr;</i>
+              <span>classifier</span>
+            </div>
           </div>
 
-          <div class="ops-strip" aria-label="Operational safeguards">
-            <p><strong>Catch-up:</strong> an interrupted Sunday run resumes without double-sending.</p>
-            <p><strong>Durability:</strong> backfill builds baselines; daily WAL-safe backups rotate locally.</p>
-            <p><strong>Self-alerting:</strong> stale data, build failures, or backup failures send one calm alert.</p>
+          <div class="ops-rail" aria-label="Operational behavior">
+            <span>Sunday schedule</span><span>24h catch-up</span><span>stale data labeled</span><span>WAL-safe backups</span><span>build / backup failures alert</span>
           </div>
         </section>
 
         <section
-          class="slide chapter-closing"
+          class="slide chapter-agent"
           id="slide-10"
           data-slide="10"
-          data-title="Centralize first. Compound forever."
+          data-title="Telegram is the frontend"
           aria-labelledby="slide-10-title"
           aria-hidden="true"
         >
-          <header class="slide-heading closing-heading">
-            <p class="chapter-label">10 / The lesson</p>
-            <h2 id="slide-10-title">Centralize first.<br>Compound forever.</h2>
+          <header class="slide-heading demo-heading">
+            <div>
+              <p class="chapter-label">10 / The product surface</p>
+              <h2 id="slide-10-title">Telegram is<br>the frontend</h2>
+            </div>
+            <div class="demo-badge"><span aria-hidden="true"></span> Live demo</div>
+            <p>Buttons, commands, and saved messages remove the need to build a separate app UI.</p>
           </header>
 
-          <div class="closing-layout">
-            <div class="branch-diagram" aria-label="Intervals.icu branching to Airtable, Claude, Paperdink, and Sunday Report">
-              <div class="branch-leaf branch-airtable">Airtable<small>reflect</small></div>
-              <div class="branch-leaf branch-claude">Claude<small>explore</small></div>
-              <div class="branch-center">
-                <span class="database-icon" aria-hidden="true"></span>
-                <strong>Intervals.icu</strong>
-                <small>one trusted history</small>
+          <div class="telegram-product-layout">
+            <figure
+              class="media-placeholder placeholder-checkin"
+              role="img"
+              aria-label="Placeholder for Telegram report intent buttons"
+            >
+              <span class="placeholder-index">Essential screenshot</span>
+              <figcaption>
+                <strong>Tappable Sunday check-in</strong>
+                <span>On plan &middot; deliberately easy &middot; off plan &middot; optional note</span>
+                <small>Crop: portrait 9:16 &middot; keep all buttons and Skip visible</small>
+              </figcaption>
+            </figure>
+
+            <article class="report-anatomy">
+              <p class="micro-label">What the finished report explains</p>
+              <ol>
+                <li><span>01</span><div><strong>Verdict + week</strong><small>one combined read and why</small></div></li>
+                <li><span>02</span><div><strong>Actual sessions</strong><small>sport, time, distance, pace, HR</small></div></li>
+                <li><span>03</span><div><strong>Five signals</strong><small>compared with recent personal normal</small></div></li>
+                <li><span>04</span><div><strong>Caveats + takeaway</strong><small>what is missing and one gentle next thought</small></div></li>
+              </ol>
+              <div class="history-mock" aria-label="Example history rows">
+                <p><span class="history-dot history-green"></span>Jun 29&ndash;Jul 5 <strong>Building</strong></p>
+                <p><span class="history-dot history-blue"></span>Jun 22&ndash;28 <strong>Recovering by design</strong></p>
+                <p><span class="history-dot history-yellow"></span>Jun 15&ndash;21 <strong>Holding</strong></p>
               </div>
-              <div class="branch-leaf branch-paper">Paperdink<small>glance</small></div>
-              <div class="branch-leaf branch-report">Sunday Report<small>repeat</small></div>
-              <span class="branch-line branch-line-one" aria-hidden="true"></span>
-              <span class="branch-line branch-line-two" aria-hidden="true"></span>
-              <span class="branch-line branch-line-three" aria-hidden="true"></span>
-              <span class="branch-line branch-line-four" aria-hidden="true"></span>
+            </article>
+
+            <article class="command-menu">
+              <header><span></span><span></span><span></span><strong>bot commands</strong></header>
+              <dl>
+                <div><dt><code>/report [date]</code></dt><dd>build a week</dd></div>
+                <div><dt><code>/checkin [date]</code></dt><dd>intent + report</dd></div>
+                <div><dt><code>/history</code></dt><dd>10 saved verdicts</dd></div>
+                <div><dt><code>/last</code></dt><dd>resend newest</dd></div>
+                <div><dt><code>/signals</code></dt><dd>plain glossary</dd></div>
+                <div><dt><code>/help</code></dt><dd>the whole UI</dd></div>
+              </dl>
+            </article>
+          </div>
+
+          <div class="demo-sequence">
+            <strong>Demo path</strong><span><code>/checkin</code> a completed week</span><i aria-hidden="true">&rarr;</i><span>point to verdict + sessions + baseline</span><i aria-hidden="true">&rarr;</i><span><code>/history</code></span>
+          </div>
+        </section>
+
+        <section
+          class="slide chapter-ai"
+          id="slide-11"
+          data-slide="11"
+          data-title="Make every layer inspectable"
+          aria-labelledby="slide-11-title"
+          aria-hidden="true"
+        >
+          <header class="slide-heading split-heading">
+            <div>
+              <p class="chapter-label">11 / Build with confidence</p>
+              <h2 id="slide-11-title">Make every layer<br>inspectable</h2>
+            </div>
+            <p class="side-copy">
+              Helpful commands turn an agent from a magic demo into a system you can understand, test, and extend.
+            </p>
+          </header>
+
+          <div class="verification-layout">
+            <article class="verification-card">
+              <header><span class="status-pill">Sunday Report</span><strong>raw data &rarr; final message</strong></header>
+              <ol class="command-ladder">
+                <li><code>make dump-week DAY=...</code><span>see raw weekly aggregates</span></li>
+                <li><code>make facts DAY=...</code><span>inspect five signals + verdict JSON</span></li>
+                <li><code>make report-raw</code><span>preview deterministic Telegram output</span></li>
+                <li><code>make report</code><span>compare optional AI narration</span></li>
+                <li><code>make verify</code><span>format, vet, test, build, glossary</span></li>
+              </ol>
+            </article>
+
+            <article class="verification-card">
+              <header><span class="status-pill">Paperdink</span><strong>SVG &rarr; physical pixels</strong></header>
+              <ol class="command-ladder">
+                <li><code>make preview-p1</code><span>open the exact SVG in Chrome</span></li>
+                <li><code>/preview</code><span>see both pages + simulated 1-bit mode</span></li>
+                <li><code>make curl-bmp</code><span>verify 400 &times; 300 bitmap encoding</span></li>
+                <li><code>make typecheck</code><span>catch Worker contract mistakes</span></li>
+                <li><code>make flash</code><span>ship only after the browser path is right</span></li>
+              </ol>
+            </article>
+          </div>
+
+          <blockquote class="inspectability-banner">
+            Do not debug the whole agent at once. Make the source, facts, render, and delivery independently visible.
+          </blockquote>
+        </section>
+
+        <section
+          class="slide chapter-closing"
+          id="slide-12"
+          data-slide="12"
+          data-title="More context, same small loop"
+          aria-labelledby="slide-12-title"
+          aria-hidden="true"
+        >
+          <header class="slide-heading split-heading closing-heading">
+            <div>
+              <p class="chapter-label">12 / Next stop</p>
+              <h2 id="slide-12-title">More context.<br>Same small loop.</h2>
+            </div>
+            <p class="side-copy">
+              Once the data has a home, one more signal or command is an extension&mdash;not a new product.
+            </p>
+          </header>
+
+          <div class="future-layout">
+            <div class="future-map" aria-label="Future data and agent extensions">
+              <div class="future-center">
+                <span class="database-icon" aria-hidden="true"></span>
+                <strong>trusted personal data</strong>
+                <small>shared facts + history</small>
+              </div>
+              <article class="future-node future-training"><span>now</span><strong>training + recovery</strong><small>five weekly signals</small></article>
+              <article class="future-node future-goals"><span>next</span><strong>goals</strong><small>what am I working toward?</small></article>
+              <article class="future-node future-food"><span>next</span><strong>food intake</strong><small>fueling context, not judgment</small></article>
+              <article class="future-node future-agents"><span>later</span><strong>more tiny agents</strong><small>Telegram as the reusable UI</small></article>
+              <i class="future-line line-training" aria-hidden="true"></i>
+              <i class="future-line line-goals" aria-hidden="true"></i>
+              <i class="future-line line-food" aria-hidden="true"></i>
+              <i class="future-line line-agents" aria-hidden="true"></i>
             </div>
 
             <ol class="takeaway-list">
-              <li>
-                <span>01</span>
-                <div><strong>Collect consistently</strong><small>The habit starts with dependable history.</small></div>
-              </li>
-              <li>
-                <span>02</span>
-                <div><strong>Keep facts trustworthy</strong><small>Interpretation is useful when the numbers stay grounded.</small></div>
-              </li>
-              <li>
-                <span>03</span>
-                <div><strong>Choose the interface for the moment</strong><small>Dashboard, chat, e-ink, or weekly agent.</small></div>
-              </li>
+              <li><span>01</span><div><strong>Centralize first</strong><small>Reliable history creates optionality.</small></div></li>
+              <li><span>02</span><div><strong>Keep facts inspectable</strong><small>AI can explain without owning the truth.</small></div></li>
+              <li><span>03</span><div><strong>Build the smallest useful loop</strong><small>One purpose, one interface, clear failure modes.</small></div></li>
             </ol>
           </div>
 
@@ -678,9 +664,9 @@
           role="progressbar"
           aria-label="Presentation progress"
           aria-valuemin="1"
-          aria-valuemax="10"
+          aria-valuemax="12"
           aria-valuenow="1"
-          aria-valuetext="Slide 1 of 10"
+          aria-valuetext="Slide 1 of 12"
         >
           <span id="progress-bar"></span>
         </div>
