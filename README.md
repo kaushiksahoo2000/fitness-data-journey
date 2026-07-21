@@ -16,7 +16,7 @@ For presenting, put the browser in full-screen mode: a 16:9 window becomes the s
 
 ## Image assets
 
-The deck is diagram-first. Slide 1 uses `assets/telegram-weekly-report.png`, slide 3 uses the privacy-safe Airtable crop in `assets/airtable-raw-records.png`, slide 4 uses the seven-day calendar crop in `assets/intervals-calendar.png`, slide 6 pairs `assets/paperdink-installed.jpg` with `assets/paperdink-closeup.jpg`, and slide 10 uses `assets/telegram-checkin.png`. Every image is local so direct-file preview and GitHub Pages stay self-contained. To replace one, keep its filename and crop ratio or update the corresponding `<img>` and descriptive `alt` text in `index.html`.
+The deck is diagram-first. Slide 1 uses `assets/telegram-weekly-report.png`, slide 3 uses the privacy-safe Airtable crop in `assets/airtable-raw-records.png`, slide 4 uses the seven-day calendar crop in `assets/intervals-calendar.png`, slide 5 uses `assets/claude-exploration.png`, slide 6 pairs `assets/paperdink-installed.jpg` with `assets/paperdink-closeup.jpg`, and slide 10 uses `assets/telegram-checkin.png`. Every image is local so direct-file preview and GitHub Pages stay self-contained. To replace one, keep its filename and crop ratio or update the corresponding `<img>` and descriptive `alt` text in `index.html`.
 
 The Airtable and Intervals.icu screenshots act as fallbacks for a live-browser handoff during the presentation; one clean image per service is enough.
 

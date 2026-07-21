@@ -224,53 +224,59 @@
           class="slide chapter-ai"
           id="slide-5"
           data-slide="5"
-          data-title="One foundation opened many interfaces"
+          data-title="Then I could ask questions I had not planned for"
           aria-labelledby="slide-5-title"
           aria-hidden="true"
         >
           <header class="slide-heading split-heading">
             <div>
-              <p class="chapter-label">05 / Compounding options</p>
-              <h2 id="slide-5-title">One foundation opened<br>many interfaces</h2>
+              <p class="chapter-label">05 / Exploratory analysis</p>
+              <h2 id="slide-5-title">Then I could ask questions<br>I had not planned for</h2>
             </div>
             <p class="side-copy">
-              The data stopped being trapped in the first dashboard I built for it.
+              I exported Intervals.icu data, uploaded it to regular Claude chat, and followed the questions wherever they went.
             </p>
           </header>
 
-          <div class="interface-map" aria-label="Intervals.icu branching to four interfaces">
-            <div class="interface-source">
-              <span class="database-icon" aria-hidden="true"></span>
-              <strong>Intervals.icu</strong>
-              <small>one trusted history</small>
+          <div class="claude-exploration-layout">
+            <div class="claude-story">
+              <div class="claude-export-flow" aria-label="Export, upload, ask, insight">
+                <span>export</span><i aria-hidden="true">&rarr;</i>
+                <span>upload</span><i aria-hidden="true">&rarr;</i>
+                <span>ask</span><i aria-hidden="true">&rarr;</i>
+                <span>insight</span>
+              </div>
+
+              <blockquote>&ldquo;Is my heart doing the same running for fewer beats?&rdquo;</blockquote>
+
+              <article>
+                <span>What it unlocked</span>
+                <strong>New question, no new dashboard</strong>
+                <p>Claude turned exported rows into a chart and a plain-English interpretation.</p>
+              </article>
+
+              <article class="claude-manual">
+                <span>The limitation</span>
+                <strong>Powerful, but episodic</strong>
+                <p>Export, upload, prompt&mdash;and remember to repeat it.</p>
+              </article>
             </div>
-            <article class="interface-destination interface-airtable">
-              <span>01</span><h3>Airtable</h3><p>fixed dashboard</p><small>reflect</small>
-            </article>
-            <article class="interface-destination interface-claude">
-              <span>02</span><h3>Claude</h3><p>unplanned questions</p><small>discover</small>
-            </article>
-            <article class="interface-destination interface-paperdink">
-              <span>03</span><h3>Paperdink</h3><p>shared e-ink view</p><small>glance</small>
-            </article>
-            <article class="interface-destination interface-sunday">
-              <span>04</span><h3>Sunday Report</h3><p>automatic feedback</p><small>repeat</small>
-            </article>
-            <span class="interface-connector connector-one" aria-hidden="true"></span>
-            <span class="interface-connector connector-two" aria-hidden="true"></span>
-            <span class="interface-connector connector-three" aria-hidden="true"></span>
-            <span class="interface-connector connector-four" aria-hidden="true"></span>
+
+            <figure class="claude-chat-shot">
+              <img
+                src="assets/claude-exploration.png"
+                alt="Claude chat analysis plotting average heart rate against running pace, with trend lines and a plain-language conclusion that similar running required fewer beats over time."
+              >
+              <figcaption>
+                <span>Claude chat &middot; Intervals.icu export</span>
+                <strong>Exploratory analysis</strong>
+              </figcaption>
+            </figure>
           </div>
 
-          <div class="discovery-strip">
-            <div class="mini-flow" aria-label="Export, upload, prompt, insight">
-              <span>export</span><i aria-hidden="true">&rarr;</i>
-              <span>upload</span><i aria-hidden="true">&rarr;</i>
-              <span>prompt</span><i aria-hidden="true">&rarr;</i>
-              <span>insight</span>
-            </div>
-            <p><strong>Claude was excellent for discovery</strong>&mdash;and Copilot helped me build the new interfaces. The remaining limitation was repeatability: useful analysis still began with me.</p>
-          </div>
+          <blockquote class="claude-takeaway">
+            Discovery was solved. Repeatability was not.
+          </blockquote>
         </section>
 
         <section
@@ -314,15 +320,15 @@
 
             <div class="paperdink-story">
               <div class="duo-panel" aria-label="Kaushik and Kathy display cards">
-                <article><span class="mascot-face" aria-hidden="true">^_^</span><div><p>Kaushik</p><strong>FORM</strong><small>42-day trend</small></div></article>
-                <article><span class="mascot-face" aria-hidden="true">^.^</span><div><p>Kathy</p><strong>READINESS</strong><small>14-day trend</small></div></article>
+                <article><span class="mascot-face" aria-hidden="true">^_^</span><div><p>Kaushik</p><strong>PERSONAL FEED</strong><small>activities + wellness</small></div></article>
+                <article><span class="mascot-face" aria-hidden="true">^.^</span><div><p>Kathy</p><strong>PERSONAL FEED</strong><small>activities + wellness</small></div></article>
               </div>
 
               <div class="paper-architecture" aria-label="Paperdink request and render architecture">
                 <article class="paper-node paper-wake"><strong>ESP32 wakes</strong><small>every 5 minutes</small></article>
                 <span class="paper-arrow paper-arrow-a" aria-hidden="true">&rarr;</span>
                 <article class="paper-node paper-worker"><strong>Cloudflare Worker</strong><small>stateless edge compute</small></article>
-                <span class="paper-arrow paper-arrow-b" aria-hidden="true">&larr;</span>
+                <span class="paper-arrow paper-arrow-b" aria-hidden="true">&harr;</span>
                 <article class="paper-node paper-data"><strong>Intervals.icu &times; 2</strong><small>both athletes, parallel</small></article>
                 <article class="paper-node paper-svg"><strong>SVG template</strong><small>browser-debuggable source</small></article>
                 <span class="paper-arrow paper-arrow-c" aria-hidden="true">&rarr;</span>
@@ -330,10 +336,8 @@
                 <span class="paper-arrow paper-arrow-d" aria-hidden="true">&rarr;</span>
                 <article class="paper-node paper-sleep"><strong>paint + sleep</strong><small>the frame drives the loop</small></article>
               </div>
-
               <div class="paper-facts">
-                <span>no cron</span><span>no database</span><span>5-minute edge cache</span><span>Copilot co-authored</span>
-                <p><code>make preview-p1</code> shows the exact SVG in a normal browser before the device ever sees a bitmap.</p>
+                <span>device drives cadence</span><span>no cron</span><span>no database</span>
               </div>
             </div>
           </div>
