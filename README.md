@@ -16,7 +16,7 @@ Use the visible controls, `ArrowLeft` / `ArrowRight`, `Space`, `Home`, or `End`.
 
 ## Replace the image placeholders
 
-The deck is diagram-first. Slide 1 uses the cropped Telegram report in `assets/telegram-weekly-report.png`; four labeled dashed image cards remain in `index.html`: Airtable, Intervals.icu, Paperdink, and the Telegram check-in. Replace a card with a local `<img>`, use its label as the basis for descriptive `alt` text, and keep the surrounding `<figure>`. Follow the crop instruction printed on the card, and commit image files to this repository so the deck remains self-contained.
+The deck is diagram-first. Slide 1 uses `assets/telegram-weekly-report.png`, and slide 3 uses the privacy-safe Airtable crop in `assets/airtable-raw-records.png`. Three labeled dashed image cards remain in `index.html`: Intervals.icu, Paperdink, and the Telegram check-in. Replace a card with a local `<img>`, use its label as the basis for descriptive `alt` text, and keep the surrounding `<figure>`. Follow the crop instruction printed on the card, and commit image files to this repository so the deck remains self-contained.
 
 The Airtable and Intervals.icu cards are designed as fallbacks for a live-browser handoff during the presentation; one clean screenshot per service is enough.
 
