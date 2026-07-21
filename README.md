@@ -14,11 +14,11 @@ Then visit <http://localhost:8000>. There is no install or build step.
 
 Use the visible controls, `ArrowLeft` / `ArrowRight`, `Space`, `Home`, or `End`. Every slide has a shareable hash URL such as `#slide-4`; touch devices also support left/right swipe.
 
-## Replace the image placeholders
+## Image assets
 
-The deck is diagram-first. Slide 1 uses `assets/telegram-weekly-report.png`, slide 3 uses the privacy-safe Airtable crop in `assets/airtable-raw-records.png`, slide 4 uses the seven-day calendar crop in `assets/intervals-calendar.png`, and slide 6 pairs `assets/paperdink-installed.jpg` with `assets/paperdink-closeup.jpg`. One labeled dashed image card remains in `index.html`: the Telegram check-in. Replace it with a local `<img>`, use its label as the basis for descriptive `alt` text, and keep the surrounding `<figure>`. Follow the crop instruction printed on the card, and commit image files to this repository so the deck remains self-contained.
+The deck is diagram-first. Slide 1 uses `assets/telegram-weekly-report.png`, slide 3 uses the privacy-safe Airtable crop in `assets/airtable-raw-records.png`, slide 4 uses the seven-day calendar crop in `assets/intervals-calendar.png`, slide 6 pairs `assets/paperdink-installed.jpg` with `assets/paperdink-closeup.jpg`, and slide 10 uses `assets/telegram-checkin.png`. Every image is local so direct-file preview and GitHub Pages stay self-contained. To replace one, keep its filename and crop ratio or update the corresponding `<img>` and descriptive `alt` text in `index.html`.
 
-The Airtable and Intervals.icu cards are designed as fallbacks for a live-browser handoff during the presentation; one clean screenshot per service is enough.
+The Airtable and Intervals.icu screenshots act as fallbacks for a live-browser handoff during the presentation; one clean image per service is enough.
 
 ## Publish with GitHub Pages
 
