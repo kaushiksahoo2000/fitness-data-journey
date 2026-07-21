@@ -12,7 +12,7 @@ python3 -m http.server 8000
 
 Then visit <http://localhost:8000>. There is no install or build step.
 
-Use the visible controls, `ArrowLeft` / `ArrowRight`, `Space`, `Home`, or `End`. Every slide has a shareable hash URL such as `#slide-4`; touch devices also support left/right swipe.
+For presenting, put the browser in full-screen mode: a 16:9 window becomes the slide itself, while the counter, progress, and arrow controls stay as small overlays. Use `ArrowLeft` / `ArrowRight`, `Space`, `Home`, or `End`. Every slide has a shareable hash URL such as `#slide-4`; touch devices also support left/right swipe.
 
 ## Image assets
 
