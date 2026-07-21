@@ -86,18 +86,18 @@ a:focus-visible,
 .deck {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
-  gap: clamp(0.45rem, 1.35vh, 1rem);
+  gap: clamp(0.4rem, 1vh, 0.75rem);
   width: 100%;
   min-height: 100vh;
   min-height: 100svh;
-  padding: clamp(0.65rem, 1.6vw, 1.35rem) clamp(0.75rem, 2vw, 2rem);
+  padding: clamp(0.5rem, 1vw, 0.85rem);
 }
 
 .deck-header,
 .deck-controls {
   display: flex;
   align-items: center;
-  width: min(94vw, calc((100svh - 8.5rem) * 16 / 9), 1440px);
+  width: min(98vw, calc((100svh - 6.5rem) * 16 / 9), 1440px);
   max-width: 100%;
   margin: 0 auto;
 }
@@ -148,7 +148,7 @@ a:focus-visible,
   display: none;
   grid-template-rows: auto minmax(0, 1fr) auto;
   gap: 1.55cqw;
-  width: min(94vw, calc((100svh - 8.5rem) * 16 / 9), 1440px);
+  width: min(98vw, calc((100svh - 6.5rem) * 16 / 9), 1440px);
   max-width: 100%;
   aspect-ratio: 16 / 9;
   padding: 3.15cqw 3.4cqw;
@@ -2450,6 +2450,119 @@ a:focus-visible,
   border: 0;
 }
 
+.chapter-label,
+.eyebrow,
+.micro-label {
+  font-size: clamp(0.45rem, 0.88cqw, 0.84rem);
+}
+
+.breadcrumb span {
+  font-size: clamp(0.43rem, 0.82cqw, 0.8rem);
+}
+
+.side-copy {
+  font-size: clamp(0.42rem, 0.9cqw, 0.86rem);
+}
+
+.slide small {
+  font-size: clamp(0.3rem, 0.72cqw, 0.72rem);
+}
+
+.slide article > span:not(.mascot-face) {
+  font-size: clamp(0.3rem, 0.68cqw, 0.66rem);
+}
+
+.slide article p:not(.micro-label) {
+  font-size: clamp(0.33rem, 0.78cqw, 0.76rem);
+  line-height: 1.34;
+}
+
+.slide article strong {
+  font-size: clamp(0.4rem, 0.9cqw, 0.86rem);
+}
+
+.pipeline-node strong {
+  font-size: clamp(0.46rem, 1cqw, 0.96rem);
+}
+
+.constraint-card > div > p,
+.paper-facts p,
+.actual-stack p,
+.baseline-card p {
+  font-size: clamp(0.33rem, 0.78cqw, 0.76rem);
+}
+
+.constraint-tag,
+.status-pill,
+.access-sketch > div:first-child span,
+.paper-facts > span,
+.scope-chips span,
+.sdk-list span,
+.verdict-chips span,
+.ops-rail span {
+  font-size: clamp(0.3rem, 0.72cqw, 0.72rem);
+}
+
+.interface-source small,
+.mini-flow span,
+.mini-flow i,
+.scope-divider span {
+  font-size: clamp(0.31rem, 0.74cqw, 0.72rem);
+}
+
+.browser-bar span,
+.browser-shot figcaption,
+.report-hero figcaption {
+  font-size: clamp(0.31rem, 0.74cqw, 0.72rem);
+}
+
+.media-placeholder figcaption span {
+  font-size: clamp(0.42rem, 0.92cqw, 0.88rem);
+}
+
+.placeholder-index,
+.placeholder-status {
+  font-size: clamp(0.32rem, 0.72cqw, 0.7rem);
+}
+
+.intent-return > span,
+.intent-return > strong,
+.intent-return > b,
+.intent-return > i {
+  font-size: clamp(0.3rem, 0.72cqw, 0.72rem);
+}
+
+.report-anatomy li > span,
+.takeaway-list li > span {
+  font-size: clamp(0.3rem, 0.72cqw, 0.72rem);
+}
+
+.report-anatomy li strong,
+.command-menu header strong,
+.verification-card header strong,
+.demo-sequence strong {
+  font-size: clamp(0.34rem, 0.8cqw, 0.78rem);
+}
+
+.command-menu code,
+.command-menu dd,
+.demo-sequence span,
+.demo-sequence code,
+.demo-sequence i,
+.command-ladder code,
+.command-ladder span {
+  font-size: clamp(0.3rem, 0.72cqw, 0.72rem);
+}
+
+.discovery-strip strong,
+.verdict-snapshot strong {
+  font-size: clamp(0.32rem, 0.74cqw, 0.72rem);
+}
+
+.closing-footer a {
+  font-size: clamp(0.34rem, 0.78cqw, 0.76rem);
+}
+
 @keyframes slide-enter {
   from {
     opacity: 0;
@@ -2490,8 +2603,27 @@ a:focus-visible,
     gap: 0.45cqw;
   }
 
+  #slide-3 .lesson-stack article {
+    padding: 0.45cqw 0.7cqw;
+  }
+
   #slide-4 {
     gap: 0.35cqw;
+  }
+
+  #slide-4 .browser-placeholder figcaption span,
+  #slide-4 .browser-placeholder figcaption small,
+  #slide-4 .database-card header p,
+  #slide-4 .database-list small {
+    display: none;
+  }
+
+  #slide-4 .database-card header {
+    padding-bottom: 0.45cqw;
+  }
+
+  #slide-4 .database-list {
+    height: calc(100% - 3.2cqw);
   }
 
   #slide-7 {
