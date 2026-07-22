@@ -2,6 +2,8 @@
 
 A dependency-free, twelve-slide story about evolving from fitness-data automation to a purpose-built Sunday reporting agent.
 
+**Live deck:** <https://kaushiksahoo2000.github.io/fitness-data-journey/>
+
 ## Preview locally
 
 Open `index.html` directly in a browser, or serve the repository root:

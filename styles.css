@@ -364,6 +364,61 @@ a:focus-visible,
   line-height: 1.35;
 }
 
+.hero-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.35cqw;
+  align-items: end;
+  margin-top: auto;
+}
+
+.hero-footer .thesis-line {
+  max-width: none;
+  margin: 0;
+}
+
+.deck-link-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.7cqw;
+  align-items: center;
+  padding: 0.55cqw 0.7cqw;
+  background: var(--white);
+  border: 1px solid color-mix(in srgb, var(--green) 30%, var(--border));
+  border-radius: 0.55cqw;
+  text-decoration: none;
+}
+
+.deck-link-card:hover {
+  border-color: var(--green);
+}
+
+.deck-link-card img {
+  display: block;
+  width: clamp(2.8rem, 7.2cqw, 8.2rem);
+  height: auto;
+  image-rendering: pixelated;
+}
+
+.deck-link-card span,
+.deck-link-card strong,
+.deck-link-card small {
+  display: block;
+}
+
+.deck-link-card strong {
+  color: var(--green);
+  font-size: clamp(0.42rem, 0.9cqw, 0.86rem);
+  line-height: 1.05;
+}
+
+.deck-link-card small {
+  margin-top: 0.28cqw;
+  color: var(--muted);
+  font-size: clamp(0.32rem, 0.66cqw, 0.64rem);
+  font-weight: 700;
+}
+
 .media-placeholder {
   position: relative;
   min-width: 0;
