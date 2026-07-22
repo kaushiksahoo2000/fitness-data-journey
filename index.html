@@ -9,7 +9,7 @@
     >
     <title>From fitness data to feedback</title>
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260721-2">
     <script src="slides.js" defer></script>
   </head>
   <body>
@@ -418,39 +418,39 @@
             <article class="signal-card">
               <span>01</span><h3>Load &amp; ramp</h3><p>Is my longer-term fitness trend rising, holding, or easing?</p>
               <dl class="signal-card-terms">
-                <div><dt>CTL</dt><dd>Chronic Training Load &middot; ~6-week fitness</dd></div>
-                <div><dt>ATL</dt><dd>Acute Training Load &middot; ~7-day fatigue</dd></div>
-                <div><dt>TSB / form</dt><dd>Training Stress Balance &middot; CTL minus ATL</dd></div>
-                <div><dt>CTL ramp</dt><dd>week-to-week change in fitness</dd></div>
+                <div><dt>CTL</dt><dd>Chronic Training Load &middot; rolling ~42-day average; a proxy for longer-term fitness</dd></div>
+                <div><dt>ATL</dt><dd>Acute Training Load &middot; rolling ~7-day average; a proxy for recent fatigue</dd></div>
+                <div><dt>TSB / form</dt><dd>Training Stress Balance &middot; CTL minus ATL; positive is fresher, negative means carrying fatigue</dd></div>
+                <div><dt>CTL ramp</dt><dd>week-over-week CTL change; shows whether fitness is building or fading</dd></div>
               </dl>
             </article>
             <article class="signal-card">
               <span>02</span><h3>Volume</h3><p>How much training did I actually do?</p>
               <dl class="signal-card-terms">
-                <div><dt>Moving time</dt><dd>session time with pauses excluded</dd></div>
-                <div><dt>Training load</dt><dd>Intervals.icu stress score for one workout</dd></div>
+                <div><dt>Moving time</dt><dd>minutes actually moving; pauses do not count</dd></div>
+                <div><dt>Training load</dt><dd>Intervals.icu stress score for one workout; weekly load adds them together</dd></div>
               </dl>
             </article>
             <article class="signal-card">
               <span>03</span><h3>Intensity</h3><p>How hard and concentrated was the work?</p>
               <dl class="signal-card-terms">
-                <div><dt>Load density</dt><dd>weekly load divided by moving hours</dd></div>
-                <div><dt>Pace</dt><dd>median minutes per mile</dd></div>
+                <div><dt>Load density</dt><dd>weekly load divided by moving hours; how concentrated the stress was</dd></div>
+                <div><dt>Pace</dt><dd>median running minutes per mile, with implausible values filtered out</dd></div>
               </dl>
             </article>
             <article class="signal-card">
               <span>04</span><h3>Consistency</h3><p>How often did I show up?</p>
               <dl class="signal-card-terms">
-                <div><dt>Active days</dt><dd>calendar days with training</dd></div>
-                <div><dt>Sessions</dt><dd>number of workouts</dd></div>
+                <div><dt>Active days</dt><dd>days with at least one training session</dd></div>
+                <div><dt>Sessions</dt><dd>number of completed workouts in the week</dd></div>
               </dl>
             </article>
             <article class="signal-card">
               <span>05</span><h3>Recovery</h3><p>Do readiness signals support the training story?</p>
               <dl class="signal-card-terms">
-                <div><dt>HRV</dt><dd>Heart-rate variability &middot; up usually means recovered</dd></div>
-                <div><dt>Resting HR</dt><dd>resting heart rate &middot; down usually means recovered</dd></div>
-                <div><dt>Sleep</dt><dd>average nightly duration for the week</dd></div>
+                <div><dt>HRV</dt><dd>Heart-rate variability &middot; rising versus your normal usually means better recovered</dd></div>
+                <div><dt>Resting HR</dt><dd>resting heart rate &middot; falling versus your normal usually means better recovered</dd></div>
+                <div><dt>Sleep</dt><dd>average nightly sleep duration for the week, when available</dd></div>
               </dl>
             </article>
           </div>
